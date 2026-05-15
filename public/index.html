@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMORTS Template</title>
+    <link rel="stylesheet" href="styles.css?v=8">
+  </head>
+  <body>
+    <main class="app">
+      <aside class="panel left-panel">
+        <div class="brand">
+          <span class="mark"></span>
+          <div>
+            <h1>MMORTS Kit</h1>
+            <p><span id="connection">Offline</span> - Template server</p>
+          </div>
+        </div>
+
+        <form id="loginForm" class="login">
+          <input id="nameInput" maxlength="18" placeholder="Commander name" autocomplete="nickname">
+          <button type="submit">Join</button>
+        </form>
+
+        <section class="resources" aria-label="Resources">
+          <div><span>Food</span><strong id="food">0</strong></div>
+          <div><span>Metal</span><strong id="metal">0</strong></div>
+          <div><span>Energy</span><strong id="energy">0</strong></div>
+        </section>
+
+        <section class="controls">
+          <h2>Build</h2>
+          <div id="buildButtons" class="button-grid"></div>
+        </section>
+
+        <section class="controls">
+          <h2>Train</h2>
+          <div id="trainButtons" class="button-grid"></div>
+        </section>
+      </aside>
+
+      <section class="map-wrap">
+        <canvas id="game" width="960" height="960"></canvas>
+        <div id="toast" class="toast" role="status"></div>
+      </section>
+
+      <aside class="panel right-panel">
+        <section>
+          <h2>Command</h2>
+          <p id="selection">Join a test slot to spawn placeholder units.</p>
+        </section>
+        <section>
+          <h2>Match</h2>
+          <div class="stat-row"><span>Status</span><strong id="matchStatus">Waiting</strong></div>
+          <div class="stat-row"><span>Winner</span><strong id="matchWinner">None</strong></div>
+        </section>
+        <section>
+          <h2>Buildings</h2>
+          <div id="buildingInfo" class="events"></div>
+        </section>
+        <section>
+          <h2>World</h2>
+          <div class="stat-row"><span>Map</span><strong id="mapName">Template</strong></div>
+          <div class="stat-row"><span>Players</span><strong id="playerCount">0</strong></div>
+          <div class="stat-row"><span>Limit</span><strong id="playerLimit">50</strong></div>
+          <div class="stat-row"><span>Units</span><strong id="unitCount">0</strong></div>
+        </section>
+        <section>
+          <h2>Matchmaking</h2>
+          <div id="roster" class="roster"></div>
+        </section>
+        <section>
+          <h2>Activity</h2>
+          <div id="events" class="events"></div>
+        </section>
+      </aside>
+    </main>
+
+    <script src="app.js?v=8"></script>
+  </body>
+</html>

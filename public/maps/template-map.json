@@ -1,0 +1,30 @@
+{
+  "name": "Template Test Map",
+  "size": 32,
+  "tileset": "default",
+  "spawnPoints": [
+    { "x": 2, "y": 2 },
+    { "x": 29, "y": 2 },
+    { "x": 2, "y": 29 },
+    { "x": 29, "y": 29 },
+    { "x": 15, "y": 2 },
+    { "x": 2, "y": 15 },
+    { "x": 29, "y": 15 },
+    { "x": 15, "y": 29 },
+    { "x": 8, "y": 8 },
+    { "x": 23, "y": 8 },
+    { "x": 8, "y": 23 },
+    { "x": 23, "y": 23 }
+  ],
+  "resourceNodes": [
+    { "id": "food-1", "x": 5, "y": 5, "type": "food" },
+    { "id": "metal-1", "x": 26, "y": 5, "type": "metal" },
+    { "id": "energy-1", "x": 5, "y": 26, "type": "energy" },
+    { "id": "food-2", "x": 26, "y": 26, "type": "food" },
+    { "id": "metal-2", "x": 16, "y": 8, "type": "metal" },
+    { "id": "energy-2", "x": 8, "y": 16, "type": "energy" },
+    { "id": "food-3", "x": 24, "y": 16, "type": "food" },
+    { "id": "metal-3", "x": 16, "y": 24, "type": "metal" }
+  ],
+  "blockedTiles": []
+}

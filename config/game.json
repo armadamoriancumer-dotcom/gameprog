@@ -1,0 +1,76 @@
+{
+  "server": {
+    "maxPlayers": 50,
+    "tickMs": 1000,
+    "resetAfterWinMs": 10000
+  },
+  "startingResources": {
+    "food": 200,
+    "metal": 160,
+    "energy": 100
+  },
+  "baseIncome": {
+    "food": 7,
+    "metal": 5,
+    "energy": 3
+  },
+  "units": {
+    "scout": {
+      "label": "Scout",
+      "cost": { "food": 35, "metal": 15 },
+      "hp": 45,
+      "attack": 7,
+      "range": 1.4,
+      "speed": 2.6,
+      "buildMs": 5000
+    },
+    "tank": {
+      "label": "Tank",
+      "cost": { "food": 25, "metal": 55 },
+      "hp": 95,
+      "attack": 16,
+      "range": 1.7,
+      "speed": 1.6,
+      "buildMs": 9000
+    },
+    "artillery": {
+      "label": "Artillery",
+      "cost": { "food": 20, "metal": 80 },
+      "hp": 65,
+      "attack": 24,
+      "range": 3.4,
+      "speed": 1.1,
+      "buildMs": 12000
+    }
+  },
+  "buildings": {
+    "farm": {
+      "label": "Farm",
+      "description": "Adds food income each tick.",
+      "cost": { "food": 80, "metal": 25 },
+      "hp": 160,
+      "income": { "food": 4 }
+    },
+    "mine": {
+      "label": "Mine",
+      "description": "Adds metal income each tick.",
+      "cost": { "food": 40, "metal": 80 },
+      "hp": 160,
+      "income": { "metal": 4 }
+    },
+    "reactor": {
+      "label": "Reactor",
+      "description": "Adds energy income each tick.",
+      "cost": { "food": 50, "metal": 60 },
+      "hp": 160,
+      "income": { "energy": 4 }
+    },
+    "barracks": {
+      "label": "Barracks",
+      "description": "Unlocks unit production. Keep it alive.",
+      "cost": { "food": 90, "metal": 120 },
+      "hp": 180,
+      "income": {}
+    }
+  }
+}
